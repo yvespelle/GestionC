@@ -1,0 +1,75 @@
+﻿<Window x:Class="GestionCommerciaux.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionCommerciaux"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <TabControl Height="410" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="792" >
+            <TabItem Header="Ajouter">
+                <Grid Background="#FFE5E5E5">
+                    <Grid Background="#FFE5E5E5">
+                        <Button Content="Ajouter" HorizontalAlignment="Left" Margin="25,123,0,0" VerticalAlignment="Top" Width="75" Click="Ajouter_Click" Height="25"/>
+                        <TextBox Name ="champNomAjouter" MaxLength="25" HorizontalAlignment="Left" Height="23" Margin="256,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" />
+                        <TextBox Name="champPrenomAjouter" MaxLength="25" HorizontalAlignment="Left" Height="23" Margin="256,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+                        <TextBox Name ="champDeptAjouter" MaxLength="25" HorizontalAlignment="Left" Height="23" Margin="256,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" />
+                        <TextBox Name="champMailAjouter" MaxLength="30" HorizontalAlignment="Left" Height="23" Margin="256,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+                        <TextBox Name ="champTelephoneAjouter" MaxLength="15" HorizontalAlignment="Left" Height="23" Margin="256,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" />
+                        <TextBox Name="champClientsAjouter" MaxLength="100" HorizontalAlignment="Left" Height="23" Margin="256,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+                        <TextBox Name ="champCollaborateurs1" MaxLength="50" HorizontalAlignment="Left" Height="23" Margin="256,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" />
+                        <TextBox Name="champBureauAjouter" MaxLength="5" HorizontalAlignment="Left" Height="23" Margin="256,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+                        <TextBox Name="champPhotoAjouter" HorizontalAlignment="Left" Height="23" Margin="256,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375"/>
+                        <Label x:Name="labelAjouter" Visibility="Hidden" Content="Label" HorizontalAlignment="Left" Margin="505,113,0,0" VerticalAlignment="Top" Width="250"/>
+                        <Label Content="NOM" HorizontalAlignment="Left" Margin="113,43,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                        <Label Content="PRENOM" HorizontalAlignment="Left" Margin="113,78,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                        <Label Content="DEPARTEMENT" HorizontalAlignment="Left" Margin="113,113,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                        <Label Content="MAIL" HorizontalAlignment="Left" Margin="113,148,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                        <Label Content="TELEPHONE" HorizontalAlignment="Left" Margin="113,183,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                        <Label Content="CLIENTS" HorizontalAlignment="Left" Margin="113,218,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                        <Label Content="COLLABORATEURS" HorizontalAlignment="Left" Margin="113,253,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                        <Label Content="BUREAU" HorizontalAlignment="Left" Margin="113,288,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                        <Label Content="PHOTO" HorizontalAlignment="Left" Margin="113,323,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+
+                    </Grid>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Modifier">
+                <Grid Background="#FFE5E5E5">
+                    <Button Content="Modifier" HorizontalAlignment="Left" Margin="25,123,0,0" VerticalAlignment="Top" Width="75" Click="Modifier_Click" Height="25"/>
+                    <TextBox x:Name ="champNomModifier" MaxLength="25" HorizontalAlignment="Left" Height="23" Margin="256,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" />
+                    <TextBox Name="champPrenomModifier" MaxLength="25" HorizontalAlignment="Left" Height="23" Margin="256,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+                    <TextBox Name ="champDeptModifier" MaxLength="25" HorizontalAlignment="Left" Height="23" Margin="256,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" />
+                    <TextBox Name="champMailModifier" MaxLength="30" HorizontalAlignment="Left" Height="23" Margin="256,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+                    <TextBox Name ="champTelephoneModifier" MaxLength="15" HorizontalAlignment="Left" Height="23" Margin="256,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" />
+                    <TextBox Name="champClientsModifier" MaxLength="100" HorizontalAlignment="Left" Height="23" Margin="256,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+                    <TextBox Name ="champCollaborateursModifier" MaxLength="50" HorizontalAlignment="Left" Height="23" Margin="256,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" />
+                    <TextBox Name="champBureauModifier" MaxLength="5" HorizontalAlignment="Left" Height="23" Margin="256,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+                    <TextBox Name="champPhotoModifier" HorizontalAlignment="Left" Height="23" Margin="256,323,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375"/>
+                    <Label Name="labelModifier" Content="Label" Visibility="Hidden" HorizontalAlignment="Left" Margin="505,113,0,0" VerticalAlignment="Top" Width="250"/>
+                    <Label Content="NOM" HorizontalAlignment="Left" Margin="113,43,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                    <Label Content="PRENOM" HorizontalAlignment="Left" Margin="113,78,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                    <Label Content="DEPARTEMENT" HorizontalAlignment="Left" Margin="113,113,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                    <Label Content="MAIL" HorizontalAlignment="Left" Margin="113,148,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                    <Label Content="TELEPHONE" HorizontalAlignment="Left" Margin="113,183,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                    <Label Content="CLIENTS" HorizontalAlignment="Left" Margin="113,218,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                    <Label Content="COLLABORATEURS" HorizontalAlignment="Left" Margin="113,253,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                    <Label Content="BUREAU" HorizontalAlignment="Left" Margin="113,288,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                    <Label Content="PHOTO" HorizontalAlignment="Left" Margin="113,323,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Supprimer">
+                <Grid Background="#FFE5E5E5">
+                    <Button Content="Supprimer" HorizontalAlignment="Left" Margin="25,123,0,0" VerticalAlignment="Top" Width="75" Click="Supprimer_Click" Height="25" Grid.ColumnSpan="2"/>
+                    <TextBox Name ="champNomSupprimer" MaxLength="25" HorizontalAlignment="Left" Height="23" Margin="236,103,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" />
+                    <TextBox Name="champPrenomSupprimer" MaxLength="25" HorizontalAlignment="Left" Height="23" Margin="236,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" />
+                    <Label Name="labelSupprimer" Content="LabelSupprimer" Visibility="Hidden" HorizontalAlignment="Left" Margin="505,123,0,0" VerticalAlignment="Top" Width="250"/>
+                    <Label Content="NOM" HorizontalAlignment="Left" Margin="93,103,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                    <Label Content="PRENOM" HorizontalAlignment="Left" Margin="93,162,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

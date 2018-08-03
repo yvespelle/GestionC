@@ -1,0 +1,30 @@
+﻿<Window x:Class="GestionCommerciaux.Popup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionCommerciaux"
+        mc:Ignorable="d"
+        Title="Popup" Height="450" Width="800" Name="popup">
+    <Grid>
+        <Button Content="Modifier" HorizontalAlignment="Left" Margin="45,95,0,0" VerticalAlignment="Top" Width="75" Click="Modifier_Click"/>
+        <TextBox Name ="champNom" HorizontalAlignment="Left" Height="23" Margin="379,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" />
+        <TextBox Name="champPrenom" HorizontalAlignment="Left" Height="23" Margin="379,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+        <TextBox Name="champPhoto" HorizontalAlignment="Left" Height="23" Margin="379,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+        <TextBox Name ="champDept" HorizontalAlignment="Left" Height="23" Margin="379,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" />
+        <TextBox Name="champMail" HorizontalAlignment="Left" Height="23" Margin="379,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+        <TextBox Name ="champTelephone" HorizontalAlignment="Left" Height="23" Margin="379,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" />
+        <TextBox Name="champClients" HorizontalAlignment="Left" Height="23" Margin="379,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+        <TextBox Name ="champCollaborateurs" HorizontalAlignment="Left" Height="23" Margin="379,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" />
+        <TextBox Name="champBureau" HorizontalAlignment="Left" Height="23" Margin="379,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+        <Label Content="NOM" HorizontalAlignment="Left" Margin="231,45,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+        <Label Content="PRENOM" HorizontalAlignment="Left" Margin="231,80,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+        <Label Content="DEPARTEMENT" HorizontalAlignment="Left" Margin="231,115,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+        <Label Content="MAIL" HorizontalAlignment="Left" Margin="231,150,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+        <Label Content="TELEPHONE" HorizontalAlignment="Left" Margin="231,185,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+        <Label Content="CLIENTS" HorizontalAlignment="Left" Margin="231,220,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+        <Label Content="COLLABORATEURS" HorizontalAlignment="Left" Margin="231,255,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+        <Label Content="BUREAU" HorizontalAlignment="Left" Margin="231,290,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+        <Label Content="PHOTO" HorizontalAlignment="Left" Margin="231,325,0,0" VerticalAlignment="Top" Width="122" FontStretch="ExtraCondensed" Height="23" FlowDirection="RightToLeft"/>
+    </Grid>
+</Window>
